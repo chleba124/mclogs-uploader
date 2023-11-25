@@ -1,7 +1,6 @@
 import colorama
 import os
 import requests
-import time
 from colorama import Fore, Back, Style
 
 colorama.init(autoreset=True)
