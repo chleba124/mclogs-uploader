@@ -1,5 +1,6 @@
 import colorama
 import os
+import time
 import requests
 from colorama import Fore, Back, Style
 
@@ -36,3 +37,6 @@ if r.status_code == 200:
         print(banner)
         print(Fore.LIGHTCYAN_EX + "[-] Log URL:", url)
         print(Fore.LIGHTCYAN_EX + "[-] Raw Log URL:", raw_url)
+        print(Fore.LIGHTRED_EX + "[-] Exiting in 5 seconds.")
+        time.sleep(5)
+        exit()
